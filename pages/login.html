@@ -1,52 +1,56 @@
-<!DOCTYPE html> <!--Especifica o TIpo de Documento - HTMLS-->
-<html lang="PT-BR">
-    <head> <!-- Cabeca do site - Configuracoes e Metadados-->
-        <tittle>EduTech - Formacao em Tecnologia</tittle>
-        <meta charset="UTF-8"> <!-- Permite acentos, cedilhas e caracteres especiais-->
-        <meta name="viewport" content="width-device-widht,initial-scaled=1.0">
-
-
-    </head>
+<!DOCTYPE html> <!-- Específica o Tipo de Documento - HTML 5 -->
+<html lang="pt-BR">
     
-    <body> <!-- Corpo Do Site - Conteudo Visivel para Todos-->
-        <header>
+    <head> <!-- CABEÇA DO SITE - CONFIGURAÇÕES E METADADOS-->
+        <title>EduTech - Formação em Tecnologia</title>
+        <meta charset="UTF-8"> <!--Permite acentos, cedilha e caracteres especiais-->
+        <meta name="viewport" content="width-device-width,initial-scale=1.0"> 
+        <link rel="stylesheet" href="../CSS/style.css">
+            <!--Aplica responsividade no site - adapta pra telas menores-->
+    </head>
+
+    <body> <!-- CORPO DO SITE - CONTEÚDO VISÍVEL PARA TODOS-->
+
+        <header class="topo"> <!-- CABEÇALHO DO CORPO DO SITE -->
                 <div>
-                    <a href="index.html">Edu<span>Tech</span></a>
-                </div>  
-                <nav>
-                    <a href="../index.html">Inicio</a>
+                    <a href="../index.html" class="logo">Edu<span>Tech</span></a>
+                </div>
+                <nav class="menu">
+                    <a href="index.html">Início</a>
                     <a href="sobre.html">Sobre</a>
                     <a href="cursos.html">Cursos</a>
                     <a href="contato.html">Contato</a>
                 </nav>
-            
+         
         </header>
-        <!--Conteudo da pagina do site-->
+
+        <!-- CONTEÚDO DA PÁGINA DO SITE -->
         <main>
-            <section id="containerFormLogin">
-                <h1>Login</h1>
-                <p>acesse sua conta na Edutech</p>
-                  <form>
-                         <label for="emailogin">E-mail</label>
-                         <input id="emaillogin" type="email" required>
-                         <br>
-                         <label for="senhaLogin">Senha</label>
-                         <input id="senhaLogin" type="password" required>
-                         <br>
-                         <button type="submit"> Entrar</button>
-                     
-                  </form>
-                  <p>Ainda não tem uma conta? <a href="cadastro.html"> Cadastre-se</a></p>
-
+              
+            <section id="cotainerFormLogin">
+                    <h1>Login</h1>
+                    <p>Acesse sua conta na EduTech</p>
+                    <form id="formLogin">
+                          <label for="emailLogin">E-mail</label>
+                          <input id="emailLogin" type="email" required>
+                          <br>
+                          <label for="senhaLogin">Senha</label>
+                          <input id="senhaLogin" type="password" required>
+                          <br>
+                          <button type="submit">Entrar</button>
+                    </form>
+                    <p>Ainda não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
             </section>
-
             
         </main>
 
-        <!-- ------------------------- -->
-        <footer> <!--Rodape do corpo do site-->
-            <p>2026. Todos direitos reservados</p>
+        <!-- -------------------------- -->
+
+        <footer> <!-- RODAPÉ DO CORPO DO SITE -->
+            <p>©2026 EduTech. Todos direitos reservados</p>
             <p><a href="contato.html">Entre em contato</a></p>
         </footer>
-    
+
     </body>
+
+</html>
